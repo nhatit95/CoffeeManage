@@ -90,6 +90,9 @@
     <Compile Include="View\ThucDon\EditThucDon.xaml.cs">
       <DependentUpon>EditThucDon.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ThucDon\ThanhPhanTD.xaml.cs">
+      <DependentUpon>ThanhPhanTD.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ThucDon\ThucDon.xaml.cs">
       <DependentUpon>ThucDon.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ThucDon\EditThucDon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ThucDon\ThanhPhanTD.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

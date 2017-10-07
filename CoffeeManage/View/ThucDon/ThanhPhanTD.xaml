@@ -1,0 +1,35 @@
+﻿<Window x:Class="CoffeeManage.View.ThucDon.ThanhPhanTD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeeManage.View.ThucDon"
+        mc:Ignorable="d"
+        Title="Thành Phần Nguyên Liệu" Height="300" Width="300">
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+            <DataGrid  Name="dataThanhphan" Height="220"></DataGrid>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Border Padding="5" Margin="0 10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Name="btnAdd" Margin="0 0 10 0" Content="Thêm"></Button>
+                    <Button Grid.Column="2" Name="btnEdit" Margin="10 0 0 0" Content="Sửa"></Button>
+                </Grid>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>
