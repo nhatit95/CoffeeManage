@@ -18,7 +18,10 @@ namespace ServerCafe.Models
         [DataMember]
         public string TenNguyenLieu { get; set; }
         [DataMember]
-        public string DonViTinh { get; set; }
+        public string IDDonVi { get; set; }
+        [ForeignKey("IDDonVi")]
+        [IgnoreDataMember]
+        public virtual DonVi DonVi { get; set; }
         [DataMember]
         public int Gia { get; set; }
         [DataMember]

@@ -16,5 +16,6 @@ namespace CoffeeManage.DTO
         public string SDT { get; set; }
         public string NgaySinh { get; set; }
         public int NangLucLamViec { get; set; }
+        public virtual ChucVu ChucVu { get; set; }
     }
 }

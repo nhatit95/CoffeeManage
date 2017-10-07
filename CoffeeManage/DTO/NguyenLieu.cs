@@ -10,8 +10,10 @@ namespace CoffeeManage.DTO
     {
         public string IDNguyenLieu { get; set; }
         public string TenNguyenLieu { get; set; }
-        public string DonViTinh { get; set; }
+        public string IDDonVi { get; set; }
         public int Gia { get; set; }
         public float SoLuong { get; set; }
+        public virtual DonVi DonVi { get; set; }
+        public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
     }
 }

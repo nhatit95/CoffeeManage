@@ -67,7 +67,12 @@
     <Compile Include="DAL\NguyenLieuDAL.cs" />
     <Compile Include="DAL\ThongTinCaNhanDAL.cs" />
     <Compile Include="DTO\ChucVu.cs" />
+    <Compile Include="DTO\DonVi.cs" />
+    <Compile Include="DTO\DoUong.cs" />
+    <Compile Include="DTO\LoaiDoUong.cs" />
     <Compile Include="DTO\NguyenLieu.cs" />
+    <Compile Include="DTO\NoiIn.cs" />
+    <Compile Include="DTO\ThanhPhanDoUong.cs" />
     <Compile Include="DTO\ThongTinCaNhan.cs" />
     <Compile Include="DAL\HttpConnect.cs" />
     <Compile Include="Presenter\HomePresenter.cs" />

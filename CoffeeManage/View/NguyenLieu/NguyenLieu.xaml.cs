@@ -33,6 +33,7 @@ namespace CoffeeManage.View.NguyenLieu
             {
                 _listNguyenLieu = value;
                 dataGrid.ItemsSource = _listNguyenLieu;
+                
             }
         }
 
@@ -60,6 +61,11 @@ namespace CoffeeManage.View.NguyenLieu
             EditNguyenLieu editnl = new EditNguyenLieu();
            
             editnl.ShowDialog();
+        }
+
+        public void ShowData()
+        {
+            throw new NotImplementedException();
         }
     }
 }

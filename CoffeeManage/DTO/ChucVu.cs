@@ -11,5 +11,7 @@ namespace CoffeeManage.DTO
         public string IDChucVu { get; set; }
         public string TenChucVu { get; set; }
         public int LuongCa { get; set; }
+        public virtual ICollection<ThongTinCaNhan> ThongTinCaNhans { get; set; }
+        
     }
 }

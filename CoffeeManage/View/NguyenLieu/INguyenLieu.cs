@@ -9,5 +9,6 @@ namespace CoffeeManage.View.NguyenLieu
     public interface INguyenLieu
     {
         List<DTO.NguyenLieu> listNguyenLieu { get; set; }
+        void ShowData();
     }
 }

@@ -25,10 +25,15 @@ namespace ServerCafe.Migrations
                 p => p.IDLoaiDoUong,
                 new LoaiDoUong { IDLoaiDoUong = "dc", TenLoaiDoUong = "Đóng Chai" },
                 new LoaiDoUong { IDLoaiDoUong = "pc", TenLoaiDoUong = "Pha Chế" });
+            context.DonVis.AddOrUpdate(
+               p => p.IDDonVi,
+               new DonVi { IDDonVi = "dv1", TenDonVi = "Kg" },
+               new DonVi { IDDonVi = "dv2", TenDonVi = "Lít" }
+                );
             context.NguyenLieus.AddOrUpdate(
                 p => p.IDNguyenLieu,
-                new NguyenLieu { IDNguyenLieu = "nl1", TenNguyenLieu = "Cafe", DonViTinh = "kg", Gia = 30000, SoLuong = 20 },
-                new NguyenLieu { IDNguyenLieu = "nl2", TenNguyenLieu = "Sữa", DonViTinh = "Lít", Gia = 20000, SoLuong = 10 });
+                new NguyenLieu { IDNguyenLieu = "nl1", TenNguyenLieu = "Cafe", IDDonVi="dv1", Gia = 30000, SoLuong = 20 },
+                new NguyenLieu { IDNguyenLieu = "nl2", TenNguyenLieu = "Sữa", IDDonVi = "dv2", Gia = 20000, SoLuong = 10 });
             context.DoUongs.AddOrUpdate(
                 p => p.IDDoUong,
                 new DoUong { IDDoUong = "du1", TenDoUong = "Cafe Sữa", IDLoaiDoUong = "pc", IDNoiIn = "quay", GiaTien = 10000, KhuyenMai = 0}

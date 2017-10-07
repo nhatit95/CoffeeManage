@@ -6,6 +6,7 @@ namespace ServerCafe.Models
 
     public class ModelCafe : DbContext
     {
+        public DbSet<DonVi> DonVis { get; set; }
         public DbSet<LoaiDoUong> LoaiDoUongs { get; set; }
         public DbSet<NoiIn> NoiIns { get; set; }
         public DbSet<NguyenLieu> NguyenLieus { get; set; }

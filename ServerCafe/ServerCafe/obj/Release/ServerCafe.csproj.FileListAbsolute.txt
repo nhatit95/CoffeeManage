@@ -199,3 +199,4 @@ D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.dll
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.pdb
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.csprojResolveAssemblyReference.cache
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial10.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial11.resources
