@@ -10,7 +10,8 @@ namespace CoffeeManage.View.Login
     {
         string Email { get; set; }
         string MatKhau { get; set; }
-        string Message { get; set; }
-        bool Close { get; set; }
+        void Message(string message);
+        void CloseForm();
+        void LoginSystem();
     }
 }

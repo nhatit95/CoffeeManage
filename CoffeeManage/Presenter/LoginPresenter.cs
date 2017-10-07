@@ -1,5 +1,4 @@
-﻿using CoffeeManage.Model;
-using CoffeeManage.View.Login;
+﻿using CoffeeManage.View.Login;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,20 +15,20 @@ namespace CoffeeManage.Presenter
         public LoginPresenter(ILogin loginView)
         {
             this.loginView = loginView;
+        }
+        public void Login()
+        {
             try
             {
-               // connect = new HttpConnect(loginView.Email, loginView.MatKhau);
-               connect = new HttpConnect("lesan1995@gmail.com", "#123Abc");
+                connect = new HttpConnect(loginView.Email, loginView.MatKhau);
+                //connect = new HttpConnect("lesan1995@gmail.com", "#123Abc");
                 Home h = new Home();
-                loginView.Close = true;
+                loginView.CloseForm();
             }
-            catch(Exception)
+            catch (Exception)
             {
-                // loginView.Message = "Tai Khoan Khong Hop Le";
-                Home h = new Home();
-                loginView.Close = true;
+                loginView.Message("Tai Khoan Khong Hop Le");
             }
-            
         }
 
     }

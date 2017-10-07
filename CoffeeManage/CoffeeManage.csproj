@@ -63,12 +63,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\TaiKhoan.cs" />
-    <Compile Include="Presenter\HttpConnect.cs" />
+    <Compile Include="DAL\ChucVuDAL.cs" />
+    <Compile Include="DAL\ThongTinCaNhanDAL.cs" />
+    <Compile Include="DTO\ChucVu.cs" />
+    <Compile Include="DTO\ThongTinCaNhan.cs" />
+    <Compile Include="DAL\HttpConnect.cs" />
+    <Compile Include="Presenter\HomePresenter.cs" />
     <Compile Include="Presenter\LoginPresenter.cs" />
     <Compile Include="View\Home\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Home\IHome.cs" />
     <Compile Include="View\NguyenLieu\AddNguyenLieu.xaml.cs">
       <DependentUpon>AddNguyenLieu.xaml</DependentUpon>
     </Compile>
@@ -189,6 +194,7 @@
     <Resource Include="View\Img\quan_ly.png" />
     <Resource Include="View\Img\table.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

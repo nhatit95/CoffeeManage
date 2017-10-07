@@ -25,8 +25,11 @@ namespace CoffeeManage
         LoginPresenter pre;
         public Login()
         {
-            
+            pre = new LoginPresenter(this);
         }
+
+
+
         public string Email
         {
             get
@@ -51,45 +54,26 @@ namespace CoffeeManage
                 password.Password = value;
             }
         }
-        private string _message;
-        public string Message
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            get
-            {
-                return _message;
-            }
-
-            set
-            {
-                _message = value;
-                MessageBox.Show(_message);
-            }
+            LoginSystem();
         }
-
-        
-        private bool _close;
-        public bool Close
+        public void LoginSystem()
         {
-            get
-            {
-                return _close;
-            }
-            set
-            {
-                _close = value;
-                if (_close) this.Close();
-            }
+            pre.Login();
         }
-
-        private async void btnLogin_Click(object sender, RoutedEventArgs e)
-        {
-            pre = new LoginPresenter(this);
-        }
-
         private void txtPassword_Enter(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter) pre = new LoginPresenter(this);
+            if (e.Key == Key.Enter) LoginSystem();
 
+        }
+        public void CloseForm()
+        {
+            this.Close();
+        }
+        public void Message(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }

@@ -11,15 +11,15 @@ namespace CoffeeManage.Presenter
 {
     class HttpConnect
     {
-        public static HttpClient client=new HttpClient();
-        public static string email="";
-        public HttpConnect(string userName,string password)
+        public static HttpClient client = new HttpClient();
+        public static string email = "";
+        public HttpConnect(string userName, string password)
         {
-            email = userName;
+            HttpConnect.email = userName;
             string token = GetToken(userName, password);
             var obj = JObject.Parse(token);
             client = new HttpClient();
-            client.BaseAddress = new Uri("http://192.168.1.18/cafeserver/api");
+            client.BaseAddress = new Uri("http://servercafe.azurewebsites.net/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue((string)obj.SelectToken("token_type"), (string)obj.SelectToken("access_token"));
             client.DefaultRequestHeaders.Accept.Add(
@@ -29,9 +29,9 @@ namespace CoffeeManage.Presenter
         {
             StringContent content = new StringContent("username=" + userName + "&password=" + password + "&grant_type=password");
             var response =
-                   client.PostAsync("http://192.168.1.18/cafeserver/Token", content).Result;
+                   client.PostAsync("http://servercafe.azurewebsites.net/Token", content).Result;
             return response.Content.ReadAsStringAsync().Result;
         }
-        
+
     }
 }

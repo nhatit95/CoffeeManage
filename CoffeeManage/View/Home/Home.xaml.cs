@@ -1,4 +1,5 @@
 ﻿using CoffeeManage.Presenter;
+using CoffeeManage.View.Home;
 using CoffeeManage.View.NguyenLieu;
 using CoffeeManage.View.NhanVien;
 using CoffeeManage.View.ThucDon;
@@ -21,12 +22,39 @@ namespace CoffeeManage
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class Home : Window,IHome
     {
+        HomePresenter pre;
+        public string TenTaiKhoan
+        {
+            get
+            {
+                return tbTenTaiKhoan.Text;
+            }
+
+            set
+            {
+                tbTenTaiKhoan.Text = value;
+            }
+        }
+
+        public string TenChucVu
+        {
+            get
+            {
+                return tbTenChucVu.Text;
+            }
+
+            set
+            {
+                tbTenChucVu.Text = value;
+            }
+        }
+
         public Home()
         {
             InitializeComponent();
-            tbTenUser.Text = "Chào " + HttpConnect.email;
+            pre = new HomePresenter(this);
             AddTang();
             AddBan();
         }

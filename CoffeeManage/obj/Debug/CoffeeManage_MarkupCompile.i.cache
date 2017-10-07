@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\DELL\Desktop\KTHDV\CoffeeManage\CoffeeManage\obj\Debug\
+D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\
 CoffeeManage
 none
 false
 DEBUG;TRACE
-C:\Users\DELL\Desktop\KTHDV\CoffeeManage\CoffeeManage\App.xaml
+D:\QLCoffee\CoffeeManage\CoffeeManage\App.xaml
 111837090695
 
-241909318849
-15431662618
+29450688880
+15272703028
 View\Login\Login.xaml;View\Home\Home.xaml;View\NguyenLieu\AddNguyenLieu.xaml;View\NguyenLieu\EditNguyenLieu.xaml;View\NguyenLieu\NguyenLieu.xaml;View\NhanVien\AddNhanVien.xaml;View\NhanVien\NhanVien.xaml;View\ThucDon\AddThucDon.xaml;View\ThucDon\EditThucDon.xaml;View\ThucDon\ThanhPhanTD.xaml;View\ThucDon\ThucDon.xaml;
 
-True
+False
 
