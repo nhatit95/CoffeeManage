@@ -16,7 +16,7 @@
                             <RowDefinition Height="*"></RowDefinition>
                         </Grid.RowDefinitions>
                         <StackPanel Grid.Row="0">
-                            <DataGrid x:Name="dataGrid" Margin="0 0 0 0" ScrollViewer.CanContentScroll="True"   />
+                            <DataGrid x:Name="dataGrid" Margin="0 0 0 0"  ColumnWidth="*" IsReadOnly="True"/>
                         </StackPanel>
                         <StackPanel Grid.Row="1">
                             <Grid Margin="0 30">

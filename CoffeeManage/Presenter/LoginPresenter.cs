@@ -20,8 +20,8 @@ namespace CoffeeManage.Presenter
         {
             try
             {
-                connect = new HttpConnect(loginView.Email, loginView.MatKhau);
-                //connect = new HttpConnect("lesan1995@gmail.com", "#123Abc");
+                //connect = new HttpConnect(loginView.Email, loginView.MatKhau);
+                connect = new HttpConnect("lesan1995@gmail.com", "#123Abc");
                 Home h = new Home();
                 loginView.CloseForm();
             }

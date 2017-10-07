@@ -64,12 +64,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DAL\ChucVuDAL.cs" />
+    <Compile Include="DAL\NguyenLieuDAL.cs" />
     <Compile Include="DAL\ThongTinCaNhanDAL.cs" />
     <Compile Include="DTO\ChucVu.cs" />
+    <Compile Include="DTO\NguyenLieu.cs" />
     <Compile Include="DTO\ThongTinCaNhan.cs" />
     <Compile Include="DAL\HttpConnect.cs" />
     <Compile Include="Presenter\HomePresenter.cs" />
     <Compile Include="Presenter\LoginPresenter.cs" />
+    <Compile Include="Presenter\NguyenLieuPresenter.cs" />
     <Compile Include="View\Home\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,7 @@
     <Compile Include="View\NguyenLieu\EditNguyenLieu.xaml.cs">
       <DependentUpon>EditNguyenLieu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\NguyenLieu\INguyenLieu.cs" />
     <Compile Include="View\NguyenLieu\NguyenLieu.xaml.cs">
       <DependentUpon>NguyenLieu.xaml</DependentUpon>
     </Compile>

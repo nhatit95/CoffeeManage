@@ -196,3 +196,4 @@ D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.csproj.Gener
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.dll
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.pdb
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial8.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial9.resources

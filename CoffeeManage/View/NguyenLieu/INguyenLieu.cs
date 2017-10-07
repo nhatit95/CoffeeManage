@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CoffeeManage.View.NguyenLieu
 {
-    class INguyenLieu
+    public interface INguyenLieu
     {
+        List<DTO.NguyenLieu> listNguyenLieu { get; set; }
     }
 }

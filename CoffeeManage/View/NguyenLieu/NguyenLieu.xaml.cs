@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeManage.Presenter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,28 @@ namespace CoffeeManage.View.NguyenLieu
     /// <summary>
     /// Interaction logic for NguyenLieu.xaml
     /// </summary>
-    public partial class NguyenLieu : Window
+    public partial class NguyenLieu : Window,INguyenLieu
     {
+        NguyenLieuPresenter pre;
+        private List<DTO.NguyenLieu> _listNguyenLieu;
+        public List<DTO.NguyenLieu> listNguyenLieu
+        {
+            get
+            {
+                return _listNguyenLieu;
+            }
+
+            set
+            {
+                _listNguyenLieu = value;
+                dataGrid.ItemsSource = _listNguyenLieu;
+            }
+        }
+
         public NguyenLieu()
         {
             InitializeComponent();
+            pre = new NguyenLieuPresenter(this);
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
