@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:tamserver.database.windows.net,1433;Initial Catalog=CafeDB;Persist Security Info=False;User ID=lesan1995;Password=Nmaddp1995;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\Ky_9\\Kien_Truc_Huong_DV\\Exercise\\Quan_Ly_Quan_CF\\Demo\\ServerCafe\\ServerCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="ModelCafe-Web.config Connection String" description="ModelCafe Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:tamserver.database.windows.net,1433;Initial Catalog=CafeDB;Persist Security Info=False;User ID=lesan1995;Password=Nmaddp1995;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Study\\DH_BKDN\\Ky_9\\Kien_Truc_Huong_DV\\Exercise\\Quan_Ly_Quan_CF\\Demo\\ServerCafe\\ServerCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ModelCafe']/@connectionString" />
+  </parameter>
+</parameters>
