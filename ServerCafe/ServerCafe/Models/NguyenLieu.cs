@@ -20,7 +20,7 @@ namespace ServerCafe.Models
         [DataMember]
         public string DonViTinh { get; set; }
         [DataMember]
-        public float Gia { get; set; }
+        public int Gia { get; set; }
         [DataMember]
         public float SoLuong { get; set; }
         [IgnoreDataMember]

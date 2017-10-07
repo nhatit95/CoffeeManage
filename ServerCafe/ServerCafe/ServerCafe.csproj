@@ -256,6 +256,7 @@
     <Compile Include="Controllers\ChucVuController.cs" />
     <Compile Include="Controllers\DoUongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NguyenLieuController.cs" />
     <Compile Include="Controllers\ThongTinCaNhanController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -292,6 +293,10 @@
     <Compile Include="Migrations\201710070444490_Initial7.cs" />
     <Compile Include="Migrations\201710070444490_Initial7.Designer.cs">
       <DependentUpon>201710070444490_Initial7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710071440266_Initial8.cs" />
+    <Compile Include="Migrations\201710071440266_Initial8.Designer.cs">
+      <DependentUpon>201710071440266_Initial8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -408,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710070444490_Initial7.resx">
       <DependentUpon>201710070444490_Initial7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710071440266_Initial8.resx">
+      <DependentUpon>201710071440266_Initial8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
