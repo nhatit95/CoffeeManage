@@ -68,6 +68,7 @@
     <Compile Include="DAL\DonViDAL.cs" />
     <Compile Include="DAL\DoUongDAL.cs" />
     <Compile Include="DAL\NguyenLieuDAL.cs" />
+    <Compile Include="DAL\ThanhPhanDoUongDAL.cs" />
     <Compile Include="DAL\ThongTinCaNhanDAL.cs" />
     <Compile Include="DTO\ChucVu.cs" />
     <Compile Include="DTO\DonVi.cs" />
