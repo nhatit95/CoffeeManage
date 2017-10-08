@@ -24,8 +24,18 @@ namespace ServerCafe.Controllers
         }
 
         // POST: api/NguyenLieu
-        public void Post([FromBody]string value)
+        public bool Post(NguyenLieu nl)
         {
+            try
+            {
+                db.NguyenLieus.Add(nl);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         // PUT: api/NguyenLieu/5

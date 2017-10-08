@@ -20,9 +20,7 @@ namespace CoffeeManage.Presenter
         public async void showData(DataGrid dg) 
         {
             List<DTO.NguyenLieu> nl = await nlDAL.GetListNguyenLieu();
-            dg.ItemsSource = nl.Select(p => new {p.IDNguyenLieu,p.TenNguyenLieu,p.DonVi.TenDonVi,p.SoLuong });
-            
-            
+            dg.ItemsSource = nl.Select(p => new {p.IDNguyenLieu,p.TenNguyenLieu,p.DonVi.TenDonVi,p.Gia,p.SoLuong });    
         }
     }
 }

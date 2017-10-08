@@ -26,5 +26,18 @@ namespace CoffeeManage.DAL
             }
 
         }
+        public async Task<bool> InsertNguyenLieu(NguyenLieu nl)
+        {
+            try
+            {
+                HttpResponseMessage response = await HttpConnect.client.PostAsJsonAsync("api/NguyenLieu", nl);
+                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadAsAsync<bool>();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

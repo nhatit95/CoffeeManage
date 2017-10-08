@@ -49,7 +49,7 @@
                                 <ColumnDefinition Width="3*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="Đơn vị tính"></TextBlock>
-                            <ComboBox Grid.Column="1" Name="cbbDonvitinh" Padding="0"></ComboBox>
+                            <ComboBox Grid.Column="1" Name="cbbDonvitinh" Padding="0" DisplayMemberPath="TenDonVi" SelectedValuePath="IDDonVi"></ComboBox>
                         </Grid>
                     </Border>
                 </StackPanel>
