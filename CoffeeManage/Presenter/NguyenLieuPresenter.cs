@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace CoffeeManage.Presenter
 {
@@ -15,11 +16,13 @@ namespace CoffeeManage.Presenter
         public NguyenLieuPresenter(INguyenLieu nlView)
         {
             this.nlView = nlView;
-            showData();
         }
-        public async void showData()
+        public async void showData(DataGrid dg) 
         {
-            nlView.listNguyenLieu = await nlDAL.GetListNguyenLieu();
+            List<DTO.NguyenLieu> nl = await nlDAL.GetListNguyenLieu();
+            dg.ItemsSource = nl.Select(p => new {p.IDNguyenLieu,p.TenNguyenLieu,p.DonVi.TenDonVi,p.SoLuong });
+            
+            
         }
     }
 }

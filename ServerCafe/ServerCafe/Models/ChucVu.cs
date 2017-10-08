@@ -19,7 +19,7 @@ namespace ServerCafe.Models
         public string TenChucVu { get; set; }
         [DataMember]
         public int LuongCa { get; set; }
-        [IgnoreDataMember]
+        [DataMember]
         public virtual ICollection<ThongTinCaNhan> ThongTinCaNhans { get; set; }
     }
 }

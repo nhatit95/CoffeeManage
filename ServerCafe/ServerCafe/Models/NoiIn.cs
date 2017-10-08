@@ -9,7 +9,7 @@ using System.Web;
 namespace ServerCafe.Models
 {
     [Table("NoiIn")]
-    [DataContract(IsReference =true)]
+    [DataContract(IsReference = true)]
     public class NoiIn
     {
         [Key]
@@ -17,7 +17,7 @@ namespace ServerCafe.Models
         public string IDNoiIn { get; set; }
         [DataMember]
         public string TenNoiIn { get; set; }
-        [IgnoreDataMember]
+        [DataMember]
         public virtual ICollection<DoUong> DoUongs { get; set; }
     }
 }

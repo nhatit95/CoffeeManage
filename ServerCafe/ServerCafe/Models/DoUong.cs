@@ -21,7 +21,7 @@ namespace ServerCafe.Models
         [DataMember]
         public string IDLoaiDoUong { get; set; }
         [ForeignKey("IDLoaiDoUong")]
-        [IgnoreDataMember]
+        [DataMember]
         public virtual LoaiDoUong LoaiDoUong { get; set; }
         [DataMember]
         public int GiaTien { get; set; }
@@ -31,9 +31,9 @@ namespace ServerCafe.Models
         public string IDNoiIn { get; set; }
         [ForeignKey("IDNoiIn")]
         
-        [IgnoreDataMember]
+        [DataMember]
         public virtual NoiIn NoiIn { get; set; }
-        [IgnoreDataMember]
+        [DataMember]
         public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
     }
 }

@@ -21,26 +21,12 @@ namespace CoffeeManage.View.NguyenLieu
     public partial class NguyenLieu : Window,INguyenLieu
     {
         NguyenLieuPresenter pre;
-        private List<DTO.NguyenLieu> _listNguyenLieu;
-        public List<DTO.NguyenLieu> listNguyenLieu
-        {
-            get
-            {
-                return _listNguyenLieu;
-            }
-
-            set
-            {
-                _listNguyenLieu = value;
-                dataGrid.ItemsSource = _listNguyenLieu;
-                
-            }
-        }
 
         public NguyenLieu()
         {
             InitializeComponent();
             pre = new NguyenLieuPresenter(this);
+            pre.showData(dataGrid);
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -63,9 +49,9 @@ namespace CoffeeManage.View.NguyenLieu
             editnl.ShowDialog();
         }
 
-        public void ShowData()
+        public void ShowData(DataGrid dg)
         {
-            throw new NotImplementedException();
+            pre.showData(dg);
         }
     }
 }

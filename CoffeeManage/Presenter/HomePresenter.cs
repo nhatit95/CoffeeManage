@@ -26,7 +26,6 @@ namespace CoffeeManage.Presenter
 
             ThongTinCaNhan tt = await ttcnDAL.GetThongTinCaNhan(HttpConnect.email);
             homeView.TenTaiKhoan = tt.Ten;
-           // ChucVu cv = await cvDAL.GetChucVu(tt.IDChucVu);
             homeView.TenChucVu = tt.ChucVu.TenChucVu;
         }
     }
