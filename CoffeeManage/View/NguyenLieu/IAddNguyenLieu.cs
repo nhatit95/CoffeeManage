@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace CoffeeManage.View.NguyenLieu
 {
@@ -13,7 +14,9 @@ namespace CoffeeManage.View.NguyenLieu
         string DonViTinh { get; set; }
         int GiaTien { get; set; }
         float SoLuong { get; set; }
+        void Message(string message);
         void Them();
         void Huy();
+        void loadDonVi(ComboBox cb);
     }
 }

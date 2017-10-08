@@ -57,11 +57,13 @@
                     <Border Padding="5">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*"></ColumnDefinition>
-                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="55*"></ColumnDefinition>
+                                <ColumnDefinition Width="15*"></ColumnDefinition>
+                                <ColumnDefinition Width="11*"/>
+                                <ColumnDefinition Width="56*"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="Giá tiền/Đơn vị"></TextBlock>
-                            <TextBox Grid.Column="1" Name="txtGiatien"></TextBox>
+                            <TextBox Grid.Column="1" Name="txtGiatien" Grid.ColumnSpan="3"></TextBox>
                         </Grid>
                     </Border>
                 </StackPanel>
@@ -86,14 +88,14 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Button Content="Thêm" Grid.Column="2" Margin="0 0 10 0"></Button>
+                            <Button Content="Thêm" Grid.Column="2" Margin="0 0 10 0" Click="Button_Click_1"></Button>
                             <Button Content="Hủy" Grid.Column="3"  Margin="10 0 0 0" Click="Button_Click"></Button>
                         </Grid>
                     </Border>
                 </StackPanel>
             </Grid>
         </StackPanel>
-       
+
 
 
 

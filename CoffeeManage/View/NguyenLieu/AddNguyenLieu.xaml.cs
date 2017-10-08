@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeManage.Presenter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,12 @@ namespace CoffeeManage.View.NguyenLieu
     /// </summary>
     public partial class AddNguyenLieu : Window,IAddNguyenLieu
     {
+        AddNguyenLieuPresenter pre;
         public AddNguyenLieu()
         {
             InitializeComponent();
+            pre = new AddNguyenLieuPresenter(this);
+            loadDonVi(cbbDonvitinh);
         }
 
         public string DonViTinh
@@ -94,14 +98,28 @@ namespace CoffeeManage.View.NguyenLieu
             this.Close();
         }
 
-        public void Them()
+        public void loadDonVi(ComboBox cb)
         {
-            throw new NotImplementedException();
+            pre.loadDonVi(cb);
         }
 
+        public void Message(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        public void Them()
+        {
+            pre.Them();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Huy();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Them();
         }
     }
 }

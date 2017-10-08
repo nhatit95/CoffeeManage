@@ -26,7 +26,7 @@ namespace CoffeeManage.View.NguyenLieu
         {
             InitializeComponent();
             pre = new NguyenLieuPresenter(this);
-            pre.showData(dataGrid);
+            ShowData(dataGrid);
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -39,7 +39,8 @@ namespace CoffeeManage.View.NguyenLieu
             AddNguyenLieu addnl = new AddNguyenLieu();
            
             addnl.ShowDialog();
-     
+            ShowData(dataGrid);
+
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)

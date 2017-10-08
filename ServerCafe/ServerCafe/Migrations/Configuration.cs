@@ -28,7 +28,9 @@ namespace ServerCafe.Migrations
             context.DonVis.AddOrUpdate(
                p => p.IDDonVi,
                new DonVi { IDDonVi = "dv1", TenDonVi = "Kg" },
-               new DonVi { IDDonVi = "dv2", TenDonVi = "Lít" }
+               new DonVi { IDDonVi = "dv2", TenDonVi = "Lít" }, 
+               new DonVi { IDDonVi = "dv3", TenDonVi = "Chai" },
+               new DonVi { IDDonVi = "dv4", TenDonVi = "Hộp" }
                 );
             context.NguyenLieus.AddOrUpdate(
                 p => p.IDNguyenLieu,
