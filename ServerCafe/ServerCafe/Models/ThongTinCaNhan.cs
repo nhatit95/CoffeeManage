@@ -33,6 +33,8 @@ namespace ServerCafe.Models
         public string NgaySinh { get; set; }
         [DataMember]
         public int NangLucLamViec { get; set; }
+        [DataMember]
+        public virtual ICollection<Order> Orders { get; set; }
         
 
 

@@ -206,3 +206,5 @@ D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.I
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial16.resources
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial17.resources
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.csprojResolveAssemblyReference.cache
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial18.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Debug\ServerCafe.Migrations.Initial19.resources

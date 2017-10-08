@@ -17,5 +17,6 @@ namespace CoffeeManage.DTO
         public string IDNoiIn { get; set; }
         public virtual NoiIn NoiIn { get; set; }
         public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
+        public virtual ICollection<ChiTietOrder> ChiTietOrders { get; set; }
     }
 }

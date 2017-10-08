@@ -253,12 +253,16 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BanController.cs" />
+    <Compile Include="Controllers\ChiTietOrderController.cs" />
     <Compile Include="Controllers\ChucVuController.cs" />
     <Compile Include="Controllers\DonViController.cs" />
     <Compile Include="Controllers\DoUongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KhuVucController.cs" />
     <Compile Include="Controllers\LoaiDoUongController.cs" />
     <Compile Include="Controllers\NguyenLieuController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ThanhPhanDoUongController.cs" />
     <Compile Include="Controllers\ThongTinCaNhanController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -337,17 +341,29 @@
     <Compile Include="Migrations\201710080223048_Initial17.Designer.cs">
       <DependentUpon>201710080223048_Initial17.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710081301116_Initial18.cs" />
+    <Compile Include="Migrations\201710081301116_Initial18.Designer.cs">
+      <DependentUpon>201710081301116_Initial18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710081744571_Initial19.cs" />
+    <Compile Include="Migrations\201710081744571_Initial19.Designer.cs">
+      <DependentUpon>201710081744571_Initial19.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Ban.cs" />
+    <Compile Include="Models\ChiTietOrder.cs" />
     <Compile Include="Models\ChucVu.cs" />
     <Compile Include="Models\DonVi.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KhuVuc.cs" />
     <Compile Include="Models\LoaiDoUong.cs" />
     <Compile Include="Models\ModelCafe.cs" />
     <Compile Include="Models\DoUong.cs" />
     <Compile Include="Models\NguyenLieu.cs" />
     <Compile Include="Models\NoiIn.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\ThanhPhanDoUong.cs" />
     <Compile Include="Models\ThongTinCaNhan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -483,6 +499,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710080223048_Initial17.resx">
       <DependentUpon>201710080223048_Initial17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710081301116_Initial18.resx">
+      <DependentUpon>201710081301116_Initial18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710081744571_Initial19.resx">
+      <DependentUpon>201710081744571_Initial19.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -3,26 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ServerCafe.Models
+namespace CoffeeManage.DTO
 {
-    [Table("Ban")]
-    [DataContract(IsReference = true)]
     public class Ban
     {
-        [Key]
-        [DataMember]
         public string IDBan { get; set; }
-        [DataMember]
         public string TenBan { get; set; }
-        [DataMember]
         public string IDKhuVuc { get; set; }
-        [ForeignKey("IDKhuVuc")]
-        [DataMember]
         public virtual KhuVuc KhuVuc { get; set; }
-        [DataMember]
         public virtual ICollection<Order> Orders { get; set; }
     }
 }

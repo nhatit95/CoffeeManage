@@ -16,13 +16,14 @@
                 <ColumnDefinition Width="8*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
+
             <Menu  Grid.Column="0" Grid.ColumnSpan="2" Foreground="#FF1717D6" Background="#FFE2E0E0"  >
                 <MenuItem Header="Quản lý" Width="180" Height="50" FontSize="15" HorizontalContentAlignment="Center" Padding="43,0,6,0" UseLayoutRounding="False" BorderBrush="#FF070708" >
-                    <MenuItem.Icon>
-                        <Image Source="/CoffeeManage;component/View/Img/quan_ly.png">
-                        </Image>
-                    </MenuItem.Icon>
-                    <MenuItem Name="itNguyenLieu" Width="175" Height="50" Header="Nguyên Liệu" Margin="0,0,0.2,0" Click="itNguyenLieu_Click">
+                        <MenuItem.Icon>
+                            <Image Source="/CoffeeManage;component/View/Img/quan_ly.png">
+                            </Image>
+                        </MenuItem.Icon>
+                        <MenuItem Name="itNguyenLieu" Width="175" Height="50" Header="Nguyên Liệu" Margin="0,0,0.2,0" Click="itNguyenLieu_Click">
                         <MenuItem.Icon>
                             <Image Source="/CoffeeManage;component/View/Img/nguyen_lieu.png">
                             </Image>
@@ -44,6 +45,7 @@
 
                     </MenuItem>
                 </MenuItem>
+                
                 <MenuItem Header="Quản lý" Width="180" Height="50" FontSize="15" HorizontalContentAlignment="Center" Padding="43,0,6,0" UseLayoutRounding="False" BorderBrush="#FF070708" >
                     <MenuItem.Icon>
                         <Image Source="/CoffeeManage;component/View/Img/quan_ly.png">
@@ -74,8 +76,8 @@
             </Grid.ColumnDefinitions>
             <ScrollViewer Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,399.846,0.4">
                 <DockPanel>
-                    <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center"  FontSize="30" FontWeight="Bold" FontFamily="UTM Avo" Foreground="Red" Text="Các Tầng"></TextBlock>
-                    <StackPanel DockPanel.Dock="Bottom"  Name="panelTang" >
+                    <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center"  FontSize="30" FontWeight="Bold" FontFamily="UTM Avo" Foreground="Red" Text="Khu Vực"></TextBlock>
+                    <StackPanel DockPanel.Dock="Bottom"  Name="panelKhuVuc" >
                     </StackPanel>
                 </DockPanel>
             </ScrollViewer>

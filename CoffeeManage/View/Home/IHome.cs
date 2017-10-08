@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeManage.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,8 @@ namespace CoffeeManage.View.Home
     {
         string TenTaiKhoan { get; set; }
         string TenChucVu { get; set; }
+        List<KhuVuc> khuVuc { get; set; }
+        Ban ban { get; set; }
+        KhuVuc kvActive { get; set; }
     }
 }

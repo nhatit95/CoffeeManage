@@ -35,5 +35,7 @@ namespace ServerCafe.Models
         public virtual NoiIn NoiIn { get; set; }
         [DataMember]
         public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
+        [DataMember]
+        public virtual ICollection<ChiTietOrder> ChiTietOrders { get; set; }
     }
 }
