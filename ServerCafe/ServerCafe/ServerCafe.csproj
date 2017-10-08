@@ -257,6 +257,7 @@
     <Compile Include="Controllers\DonViController.cs" />
     <Compile Include="Controllers\DoUongController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoaiDoUongController.cs" />
     <Compile Include="Controllers\NguyenLieuController.cs" />
     <Compile Include="Controllers\ThongTinCaNhanController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

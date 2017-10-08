@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeManage.Presenter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,19 @@ namespace CoffeeManage.View.ThucDon
     /// <summary>
     /// Interaction logic for ThucDon.xaml
     /// </summary>
-    public partial class ThucDon : Window
+    public partial class ThucDon : Window,IThucDon
     {
+        ThucDonPresenter pre;
         public ThucDon()
         {
             InitializeComponent();
+            pre = new ThucDonPresenter(this);
+            ShowData(dataGrid);
+        }
+
+        public void ShowData(DataGrid dg)
+        {
+            pre.showData(dg);
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
@@ -34,6 +43,11 @@ namespace CoffeeManage.View.ThucDon
         {
             EditThucDon edittd = new EditThucDon();
             edittd.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

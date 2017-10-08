@@ -37,7 +37,6 @@ namespace CoffeeManage.View.NguyenLieu
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             AddNguyenLieu addnl = new AddNguyenLieu();
-           
             addnl.ShowDialog();
             ShowData(dataGrid);
 
