@@ -23,6 +23,8 @@ namespace ServerCafe.Models
         [DataMember]
         public virtual KhuVuc KhuVuc { get; set; }
         [DataMember]
-        public virtual ICollection<Order> Orders { get; set; }
+        public int TrangThai { get; set; }
+        [DataMember]
+        public int TongTien { get; set; }
     }
 }

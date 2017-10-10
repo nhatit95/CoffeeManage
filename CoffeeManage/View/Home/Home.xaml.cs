@@ -93,6 +93,19 @@ namespace CoffeeManage
             }
         }
 
+        public List<Ban> Ban
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public void AddKhuVuc(List<DTO.KhuVuc> kv)
         {
             for (int i = 0; i < kv.Count; i++)
@@ -124,28 +137,10 @@ namespace CoffeeManage
             for (int i = 0; i < ba.Count; i++)
             {
                 Button bt = new Button();
-                bt.Content = ba.ElementAt(i).IDBan;
-                SetBTBan(bt);
-                try
-                {
-                    Order od = ba.ElementAt(i).Orders.FirstOrDefault(p => p.ThoiGianRa == "00/00/0000 00:00:00.00");
-                    if (od == null) setColorBan(bt, 0);
-                    else
-                    {
-                        if (od.DaThanhToan) setColorBan(bt, 2);
-                        else setColorBan(bt, 1);
-                        int giatien = od.ChiTietOrders.Sum(p => p.DoUong.GiaTien * p.SoLuong) + od.PhuThu;
-                        bt.Content = "   " + bt.Content + "\n\n" + giatien;
-                    }
-                }
-                catch
-                {
-                    setColorBan(bt, 0);
-                    continue;
-                }
+                SetBTBan(bt,ba.ElementAt(i).IDBan,ba.ElementAt(i).TongTien,ba.ElementAt(i).TrangThai);
             }
         }
-        public void SetBTBan(Button bt)
+        public void SetBTBan(Button bt,string tenban,int tien,int trangthai)
         {
             
             Style style = Application.Current.FindResource("LibraryTable") as Style;
@@ -153,6 +148,9 @@ namespace CoffeeManage
             bt.FontSize = 20; bt.Foreground = colorBr("#003322");
             bt.FontStyle = FontStyles.Oblique; bt.Style = style;
             bt.Margin = new Thickness(10);panelBan.Children.Add(bt);
+            setColorBan(bt, trangthai);
+            bt.Content = tenban;
+            if (trangthai != 0) bt.Content = "   " + bt.Content + "\n\n" + tien;
         }
         public SolidColorBrush colorBr(string color)
         {

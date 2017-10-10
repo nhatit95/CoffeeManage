@@ -129,7 +129,6 @@ D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NguyenLieu\NguyenLieu.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NhanVien\AddNhanVien.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NhanVien\NhanVien.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\AddThucDon.g.cs
-D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\EditThucDon.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\ThanhPhanTD.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\ThucDon.g.cs
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\App.g.cs
@@ -143,7 +142,6 @@ D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NguyenLieu\NguyenLieu.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NhanVien\AddNhanVien.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\NhanVien\NhanVien.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\AddThucDon.baml
-D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\EditThucDon.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\ThanhPhanTD.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\View\ThucDon\ThucDon.baml
 D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.g.resources

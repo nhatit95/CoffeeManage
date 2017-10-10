@@ -18,7 +18,6 @@ namespace CoffeeManage.DTO
         public virtual DonVi DonVi { get; set; }
         public int Gia { get; set; }
         public float SoLuong { get; set; }
-        public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
 
     }
 }

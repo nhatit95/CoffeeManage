@@ -17,7 +17,5 @@ namespace ServerCafe.Models
         public string IDNoiIn { get; set; }
         [DataMember]
         public string TenNoiIn { get; set; }
-        [DataMember]
-        public virtual ICollection<DoUong> DoUongs { get; set; }
     }
 }

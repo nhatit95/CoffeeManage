@@ -23,12 +23,12 @@ namespace ServerCafe.Migrations
                 );
             context.Bans.AddOrUpdate(
                 p => p.IDBan,
-                new Ban { IDBan = "A1", TenBan = "A1", IDKhuVuc = "kv1"},
-                new Ban { IDBan = "A2", TenBan = "A2", IDKhuVuc = "kv1" },
-                new Ban { IDBan = "A3", TenBan = "A3", IDKhuVuc = "kv1"},
-                new Ban { IDBan = "B1", TenBan = "B1", IDKhuVuc = "kv2"},
-                new Ban { IDBan = "B2", TenBan = "B2", IDKhuVuc = "kv2"},
-                new Ban { IDBan = "B3", TenBan = "B3", IDKhuVuc = "kv2"}
+                new Ban { IDBan = "A1", TenBan = "A1", IDKhuVuc = "kv1",TongTien=0,TrangThai=0},
+                new Ban { IDBan = "A2", TenBan = "A2", IDKhuVuc = "kv1", TongTien = 98000, TrangThai = 1 },
+                new Ban { IDBan = "A3", TenBan = "A3", IDKhuVuc = "kv1", TongTien = 0, TrangThai = 0 },
+                new Ban { IDBan = "B1", TenBan = "B1", IDKhuVuc = "kv2", TongTien = 60000, TrangThai = 1 },
+                new Ban { IDBan = "B2", TenBan = "B2", IDKhuVuc = "kv2", TongTien = 0, TrangThai = 0 },
+                new Ban { IDBan = "B3", TenBan = "B3", IDKhuVuc = "kv2", TongTien = 70000, TrangThai = 2 }
                 );
             context.NoiIns.AddOrUpdate(
                 p => p.IDNoiIn,

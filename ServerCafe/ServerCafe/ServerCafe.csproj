@@ -262,6 +262,7 @@
     <Compile Include="Controllers\KhuVucController.cs" />
     <Compile Include="Controllers\LoaiDoUongController.cs" />
     <Compile Include="Controllers\NguyenLieuController.cs" />
+    <Compile Include="Controllers\NoiInController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ThanhPhanDoUongController.cs" />
     <Compile Include="Controllers\ThongTinCaNhanController.cs" />
@@ -348,6 +349,22 @@
     <Compile Include="Migrations\201710081744571_Initial19.cs" />
     <Compile Include="Migrations\201710081744571_Initial19.Designer.cs">
       <DependentUpon>201710081744571_Initial19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710100124355_Initial20.cs" />
+    <Compile Include="Migrations\201710100124355_Initial20.Designer.cs">
+      <DependentUpon>201710100124355_Initial20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710100155160_Initial21.cs" />
+    <Compile Include="Migrations\201710100155160_Initial21.Designer.cs">
+      <DependentUpon>201710100155160_Initial21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710100201531_Initial22.cs" />
+    <Compile Include="Migrations\201710100201531_Initial22.Designer.cs">
+      <DependentUpon>201710100201531_Initial22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710100213428_Initial23.cs" />
+    <Compile Include="Migrations\201710100213428_Initial23.Designer.cs">
+      <DependentUpon>201710100213428_Initial23.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -505,6 +522,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710081744571_Initial19.resx">
       <DependentUpon>201710081744571_Initial19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710100124355_Initial20.resx">
+      <DependentUpon>201710100124355_Initial20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710100155160_Initial21.resx">
+      <DependentUpon>201710100155160_Initial21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710100201531_Initial22.resx">
+      <DependentUpon>201710100201531_Initial22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710100213428_Initial23.resx">
+      <DependentUpon>201710100213428_Initial23.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

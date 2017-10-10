@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeManage.View.ThucDon"
         mc:Ignorable="d"
-        Title="Thêm Thực Đơn" Height="250" Width="300" ResizeMode="CanResize" WindowStartupLocation="CenterScreen">
+        Title="Thêm Thực Đơn" Height="271.472" Width="300" ResizeMode="CanResize" WindowStartupLocation="CenterScreen">
     <Border Padding="5">
         <StackPanel >
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
@@ -51,7 +52,7 @@
                                 <ColumnDefinition Width="3*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="Loại Thực Đơn"></TextBlock>
-                            <ComboBox Grid.Column="1" Name="cbbLoaithucdon" Padding="0"></ComboBox>
+                            <ComboBox Grid.Column="1" Name="cbbLoaithucdon" Padding="0" DisplayMemberPath="TenLoaiDoUong" SelectedValuePath="IDLoaiDoUong"></ComboBox>
                         </Grid>
                     </Border>
                 </StackPanel>
@@ -80,6 +81,18 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Row="5">
+                    <Border Padding="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Nơi In"></TextBlock>
+                            <ComboBox Grid.Column="1" Name="cbbNoiIn" Padding="0" DisplayMemberPath="TenNoiIn" SelectedValuePath="IDNoiIn"></ComboBox>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+                <StackPanel Grid.Row="6">
                     <Border Margin="0 25" Padding="5">
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -88,8 +101,8 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Button Content="Thêm" Grid.Column="2" Margin="0 0 10 0"></Button>
-                            <Button Content="Hủy" Grid.Column="3"  Margin="10 0 0 0" ></Button>
+                            <Button Content="Thêm" Margin="47,0,31,0" Height="20" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2"/>
+                            <Button Content="Hủy" Grid.Column="2"  Margin="34,0,0,0" HorizontalAlignment="Left" Width="58" Click="Button_Click_1" Grid.ColumnSpan="2" />
                         </Grid>
                     </Border>
                 </StackPanel>

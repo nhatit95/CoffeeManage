@@ -208,3 +208,7 @@ D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial17.resources
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial18.resources
 D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial19.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial20.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial21.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial22.resources
+D:\QLCoffee\CoffeeManage\ServerCafe\ServerCafe\obj\Release\ServerCafe.Migrations.Initial23.resources

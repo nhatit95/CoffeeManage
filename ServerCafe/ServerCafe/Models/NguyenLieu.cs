@@ -26,8 +26,6 @@ namespace ServerCafe.Models
         public int Gia { get; set; }
         [DataMember]
         public float SoLuong { get; set; }
-        [DataMember]
-        public virtual ICollection<ThanhPhanDoUong> ThanhPhanDoUongs { get; set; }
         
     }
 }

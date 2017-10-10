@@ -14,6 +14,7 @@ namespace CoffeeManage.DTO
         public string TenBan { get; set; }
         public string IDKhuVuc { get; set; }
         public virtual KhuVuc KhuVuc { get; set; }
-        public virtual ICollection<Order> Orders { get; set; }
+        public int TrangThai { get; set; }
+        public int TongTien { get; set; }
     }
 }
