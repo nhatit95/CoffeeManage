@@ -16,7 +16,10 @@ namespace ServerCafe.Models
         public DbSet<ChucVu> ChucVus { get; set; }
         public DbSet<ThongTinCaNhan> ThongTinCaNhans { get; set; }
         
-        
+        public DbSet<KhuVuc> KhuVucs { get; set; }
+        public DbSet<Ban> Bans { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<ChiTietOrder> ChiTietOrders { get; set; }
        
         public ModelCafe() : base("name=ModelCafe")
         {

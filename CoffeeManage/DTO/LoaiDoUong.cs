@@ -10,5 +10,6 @@ namespace CoffeeManage.DTO
     {
         public string IDLoaiDoUong { get; set; }
         public string TenLoaiDoUong { get; set; }
+        public virtual ICollection<DoUong> DoUongs { get; set; }
     }
 }

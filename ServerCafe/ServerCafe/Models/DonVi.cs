@@ -17,7 +17,5 @@ namespace ServerCafe.Models
         public string IDDonVi { get; set; }
         [DataMember]
         public string TenDonVi { get; set; }
-        [DataMember]
-        public virtual ICollection<NguyenLieu> NguyenLieus { get; set; }
     }
 }

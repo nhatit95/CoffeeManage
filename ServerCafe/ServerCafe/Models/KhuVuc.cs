@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace ServerCafe.Models
@@ -13,7 +16,7 @@ namespace ServerCafe.Models
         [DataMember]
         public string IDKhuVuc { get; set; }
         [DataMember]
-        public string KhuVuc { get; set; }
+        public string TenKhuVuc { get; set; }
         [DataMember]
         public virtual ICollection<Ban> Bans { get; set; }
     }

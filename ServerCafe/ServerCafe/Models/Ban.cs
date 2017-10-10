@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace ServerCafe.Models
@@ -13,8 +16,15 @@ namespace ServerCafe.Models
         [DataMember]
         public string IDBan { get; set; }
         [DataMember]
-        public string IDKhuVuc { get; set; }
+        public string TenBan { get; set; }
         [DataMember]
-        public virtual ICollection<Ban> Bans { get; set; }
+        public string IDKhuVuc { get; set; }
+        [ForeignKey("IDKhuVuc")]
+        [DataMember]
+        public virtual KhuVuc KhuVuc { get; set; }
+        [DataMember]
+        public int TrangThai { get; set; }
+        [DataMember]
+        public int TongTien { get; set; }
     }
 }

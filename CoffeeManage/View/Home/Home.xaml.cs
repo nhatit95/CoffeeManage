@@ -17,6 +17,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CoffeeManage.DTO;
 
 namespace CoffeeManage
 {
@@ -26,17 +27,16 @@ namespace CoffeeManage
     public partial class Home : Window,IHome
     {
         HomePresenter pre;
+        public Home()
+        {
+            InitializeComponent();
+            this.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,../View/Img/background.jpg")));
+            pre = new HomePresenter(this);
+        }
         public string TenTaiKhoan
         {
-            get
-            {
-                return tbTenTaiKhoan.Text;
-            }
-
-            set
-            {
-                tbTenTaiKhoan.Text = value;
-            }
+            get{ return tbTenTaiKhoan.Text; }
+            set{tbTenTaiKhoan.Text = value;}
         }
 
         public string TenChucVu
@@ -52,66 +52,125 @@ namespace CoffeeManage
             }
         }
 
-        public Home()
+        private List<KhuVuc> _khuVuc;
+        public List<KhuVuc> khuVuc
         {
-            InitializeComponent();
-            pre = new HomePresenter(this);
-            AddTang();
-            AddBan();
+            get
+            {
+                return _khuVuc;
+            }
+
+            set
+            {
+                _khuVuc = value;
+                AddKhuVuc(_khuVuc);
+            }
         }
-        public void AddTang()
+        private Ban _ban;
+        public Ban ban
         {
-            string[] btnName = { "Tầng 1", "Tầng 2" };
-            Button[] btTang = new Button[btnName.Length];
-            SolidColorBrush bb = new SolidColorBrush();
-            // bb.Color = (Color)ColorConverter.ConvertFromString("#FF35F3EB");
+            get
+            {
+                return _ban;
+            }
+
+            set
+            {
+                _ban = value;
+            }
+        }
+        private KhuVuc _kvActive;
+        public KhuVuc kvActive
+        {
+            get
+            {
+                return _kvActive;
+            }
+
+            set
+            {
+                _kvActive = value;
+                 AddBan(kvActive.Bans.OrderBy(p=> p.IDBan).ToList());
+            }
+        }
+
+        public List<Ban> Ban
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public void AddKhuVuc(List<DTO.KhuVuc> kv)
+        {
+            for (int i = 0; i < kv.Count; i++)
+            {
+                Button bt = new Button();
+                bt.Content = kv.ElementAt(i).IDKhuVuc;
+                bt.Click += Bt_Click;
+                SetBTKV(bt);
+            }
+        }
+
+        private void Bt_Click(object sender, RoutedEventArgs e)
+        {
+            Button bt = (Button)sender;
+            kvActive = _khuVuc.Single(p => p.IDKhuVuc == bt.Content.ToString() );
+        }
+
+        public void SetBTKV(Button bt)
+        {
             Style style = Application.Current.FindResource("LibraryFloor") as Style;
-            for (int i = 0; i < btTang.Length; i++)
+            bt.Height = 100; bt.FontSize = 30;
+            bt.Foreground = colorBr("#0099FF");bt.FontStyle = FontStyles.Oblique;
+            bt.Style = style; bt.Margin = new Thickness(10);
+            panelKhuVuc.Children.Add(bt);
+        }
+        public void AddBan(List<DTO.Ban> ba)
+        {
+            panelBan.Children.Clear();
+            for (int i = 0; i < ba.Count; i++)
             {
-
-                btTang[i] = new Button();
-                btTang[i].Content = btnName[i];
-                //btTang[i].Background = bb;
-                //btTang[i].VerticalAlignment = VerticalAlignment.Stretch;
-                btTang[i].Height = 100;
-                btTang[i].FontSize = 20;
-                btTang[i].Style = style;
-                btTang[i].Margin = new Thickness(10);
-                panelTang.Children.Add(btTang[i]);
+                Button bt = new Button();
+                SetBTBan(bt,ba.ElementAt(i).IDBan,ba.ElementAt(i).TongTien,ba.ElementAt(i).TrangThai);
             }
         }
-        public void AddBan()
+        public void SetBTBan(Button bt,string tenban,int tien,int trangthai)
         {
-            string[] btnName = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
-            Button[] btTang = new Button[btnName.Length];
-            SolidColorBrush bb = new SolidColorBrush();
+            
             Style style = Application.Current.FindResource("LibraryTable") as Style;
-            // bb.Color = (Color)ColorConverter.ConvertFromString("#FF4ED41C");
-            this.Background = new ImageBrush(new BitmapImage(new Uri("pack://application:,,,../View/Img/background.jpg")));
-            for (int i = 0; i < btTang.Length; i++)
+            bt.Width = 150; bt.Height = 150;
+            bt.FontSize = 20; bt.Foreground = colorBr("#003322");
+            bt.FontStyle = FontStyles.Oblique; bt.Style = style;
+            bt.Margin = new Thickness(10);panelBan.Children.Add(bt);
+            setColorBan(bt, trangthai);
+            bt.Content = tenban;
+            if (trangthai != 0) bt.Content = "   " + bt.Content + "\n\n" + tien;
+        }
+        public SolidColorBrush colorBr(string color)
+        {
+            SolidColorBrush bb = new SolidColorBrush();
+            bb.Color = (Color)ColorConverter.ConvertFromString(color);
+            return bb;
+        }
+        public void setColorBan(Button bt,int state)
+        {
+            switch (state)
             {
-                
-                btTang[i] = new Button();
-               // btTang[i].Background = new ImageBrush(new BitmapImage(new Uri(@"C://Users/Administrator/Downloads/Shutterstock Downloader by Juno_okyo/table.png")));
-                btTang[i].Content = btnName[i];
-                btTang[i].Content = btTang[i].Content;
-               // btTang[i].Background = bb;
-                btTang[i].Width = 150;
-                btTang[i].Height = 150;
-                btTang[i].FontSize = 20;
-                btTang[i].Style = style;
-                btTang[i].Margin = new Thickness(10);
-                panelBan.Children.Add(btTang[i]);
+                case 0:bt.Background=colorBr("#ffffff"); break;
+                case 1: bt.Background = colorBr("#21FFFF"); break;
+                case 2: bt.Background = colorBr("#F4570B"); break;
             }
         }
-        public void QuanLyNguyenLieu()
-        {
-
-        }
-
         private void itNguyenLieu_Click(object sender, RoutedEventArgs e)
         {
-            NguyenLieu nl = new NguyenLieu();
+            View.NguyenLieu.NguyenLieu nl = new View.NguyenLieu.NguyenLieu();
             nl.ShowDialog();
         }
 

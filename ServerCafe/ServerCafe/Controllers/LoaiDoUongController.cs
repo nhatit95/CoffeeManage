@@ -12,9 +12,9 @@ namespace ServerCafe.Controllers
     {
         ModelCafe db = new ModelCafe();
         // GET: api/LoaiDoUong
-        public List<DoUong> Get()
+        public List<LoaiDoUong> Get()
         {
-            return db.DoUongs.ToList();
+            return db.LoaiDoUongs.ToList();
         }
 
         // GET: api/LoaiDoUong/5

@@ -26,16 +26,12 @@ namespace ServerCafe.Controllers
         }
 
         // POST: api/DoUong
-        [Authorize(Roles = "ChuQuan,QuanLy")]
+        //[Authorize(Roles = "ChuQuan,QuanLy")]
         public bool Post(DoUong duu)
         {
             try
             {
-                
-                DoUong du = new DoUong();
-                du.IDDoUong = duu.IDDoUong; du.TenDoUong = duu.TenDoUong; du.GiaTien = duu.GiaTien;
-                du.LoaiDoUong = duu.LoaiDoUong;
-                db.DoUongs.Add(du);
+                db.DoUongs.Add(duu);
                 db.SaveChanges();
                 return true;
             }
@@ -50,10 +46,11 @@ namespace ServerCafe.Controllers
         {
             try
             {
-      
                 DoUong du = db.DoUongs.FirstOrDefault(x => x.IDDoUong == duu.IDDoUong);
                 if (du == null) return false;
-                du.TenDoUong = duu.TenDoUong; du.GiaTien = duu.GiaTien;du.LoaiDoUong = duu.LoaiDoUong;
+                du.TenDoUong = duu.TenDoUong; du.GiaTien = duu.GiaTien;
+                du.IDLoaiDoUong = duu.IDLoaiDoUong;du.KhuyenMai = duu.KhuyenMai;
+                du.IDNoiIn = du.IDNoiIn;
                 db.SaveChanges();
                 return true;
             }

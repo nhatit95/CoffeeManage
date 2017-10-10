@@ -8,13 +8,13 @@
         <Style x:Key="LibraryTable" TargetType="{x:Type Button}">
             <Setter Property="Background">
                 <Setter.Value>
-                    <ImageBrush  ImageSource="View/Img/table.png" />
+                    <SolidColorBrush Color="White"></SolidColorBrush>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}" BorderBrush="#52c0e8" BorderThickness="1" CornerRadius="30">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="#2020FF" BorderThickness="1.2" CornerRadius="100">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -24,7 +24,7 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background">
                         <Setter.Value>
-                            <ImageBrush  ImageSource="View/Img/table.png" />
+                            <SolidColorBrush Color="White"></SolidColorBrush>
                         </Setter.Value>
                     </Setter>
                     <Setter Property="Opacity" Value="0.4"></Setter>
@@ -35,13 +35,13 @@
         <Style x:Key="LibraryFloor" TargetType="{x:Type Button}">
             <Setter Property="Background">
                 <Setter.Value>
-                    <ImageBrush  ImageSource="View/Img/floor.jpg"/>
+                    <SolidColorBrush Color="White"></SolidColorBrush>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}" BorderBrush="#52c0e8" BorderThickness="1" CornerRadius="30">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="#003322" BorderThickness="1.2" CornerRadius="30">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -51,12 +51,14 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background">
                         <Setter.Value>
-                            <ImageBrush  ImageSource="View/Img/floor.jpg" Stretch="Fill" />
+                            <SolidColorBrush Color="White"></SolidColorBrush>
+                           
                         </Setter.Value>
                     </Setter>
-                    <Setter Property="Opacity" Value="0.4"></Setter>
+                    <Setter Property="Opacity" Value="0.6"></Setter>
                 </Trigger>
             </Style.Triggers>
         </Style>
+        
     </Application.Resources>
 </Application>

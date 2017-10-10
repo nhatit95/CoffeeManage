@@ -37,12 +37,22 @@ namespace CoffeeManage.View.ThucDon
         {
             AddThucDon addtd = new AddThucDon();
             addtd.ShowDialog();
+            ShowData(dataGrid);
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            EditThucDon edittd = new EditThucDon();
-            edittd.ShowDialog();
+            try
+            {
+                string item = dataGrid.SelectedItem.ToString();
+                string id = item.Substring(item.IndexOf('=') + 2, item.IndexOf(',') - item.IndexOf('=') - 2);
+                AddThucDon addtd = new AddThucDon();
+                addtd.IDThucDon = id; addtd.isAdd = false;
+                addtd.ShowDialog();
+                ShowData(dataGrid);
+            }
+            catch(Exception) { }
+            
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)

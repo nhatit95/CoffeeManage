@@ -26,5 +26,35 @@ namespace CoffeeManage.DAL
             }
 
         }
+        public async Task<DoUong> GetDoUong(string id)
+        {
+            DoUong du = null;
+            try
+            {
+                HttpResponseMessage response = await HttpConnect.client.GetAsync("api/DoUong/?id=" + id);
+                if (response.IsSuccessStatusCode)
+                    du = await response.Content.ReadAsAsync<DoUong>();
+                return du;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Loi :" + e);
+                return null;
+            }
+
+        }
+        public async Task<bool> InsertDoUong(DoUong du)
+        {
+            try
+            {
+                HttpResponseMessage response = await HttpConnect.client.PostAsJsonAsync("api/DoUong", du);
+                response.EnsureSuccessStatusCode();
+                return await response.Content.ReadAsAsync<bool>();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
