@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\QLCoffee\CoffeeManage\CoffeeManage\obj\Debug\
+C:\Users\DELL\Desktop\KTHDV\CoffeeManage\CoffeeManage\CoffeeManage\obj\Debug\
 CoffeeManage
 none
 false
 DEBUG;TRACE
-D:\QLCoffee\CoffeeManage\CoffeeManage\App.xaml
-111837090695
+C:\Users\DELL\Desktop\KTHDV\CoffeeManage\CoffeeManage\CoffeeManage\App.xaml
+13-1218769097
 
-4632898490
-16770723126
-View\Login\Login.xaml;View\Home\Home.xaml;View\NguyenLieu\AddNguyenLieu.xaml;View\NguyenLieu\EditNguyenLieu.xaml;View\NguyenLieu\NguyenLieu.xaml;View\NhanVien\AddNhanVien.xaml;View\NhanVien\NhanVien.xaml;View\ThucDon\AddThucDon.xaml;View\ThucDon\EditThucDon.xaml;View\ThucDon\ThanhPhanTD.xaml;View\ThucDon\ThucDon.xaml;
+48905660232
+16-1437455370
+View\HoaDon\HoaDonBan.xaml;View\Login\Login.xaml;View\Home\Home.xaml;View\NguyenLieu\AddNguyenLieu.xaml;View\NguyenLieu\EditNguyenLieu.xaml;View\NguyenLieu\NguyenLieu.xaml;View\NhanVien\AddNhanVien.xaml;View\NhanVien\NhanVien.xaml;View\ThucDon\AddThanhPhanTD.xaml;View\ThucDon\AddThucDon.xaml;View\ThucDon\EditThucDon.xaml;View\ThucDon\ThanhPhanTD.xaml;View\ThucDon\ThucDon.xaml;
 
 False
 

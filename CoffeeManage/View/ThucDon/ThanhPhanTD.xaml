@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeManage.View.ThucDon"
         mc:Ignorable="d"
-        Title="Thành Phần Nguyên Liệu" Height="300" Width="300">
+        Title="Thành Phần Nguyên Liệu" Height="300" Width="500">
     <StackPanel>
         <Grid>
             <Grid.RowDefinitions>
@@ -13,7 +13,7 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0">
-            <DataGrid  Name="dataThanhphan" Height="220"></DataGrid>
+            <DataGrid  Name="dataThanhphan" ScrollViewer.CanContentScroll="True" Height="220"></DataGrid>
             </StackPanel>
             <StackPanel Grid.Row="1">
                 <Border Padding="5" Margin="0 10">
@@ -25,9 +25,12 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="1" Name="btnAdd" Margin="0 0 10 0" Content="Thêm"></Button>
-                    <Button Grid.Column="2" Name="btnEdit" Margin="10 0 0 0" Content="Sửa"></Button>
-                </Grid>
+                    <Button Grid.Column="0" Name="btnAdd" Margin="10 0 10 0" Content="Thêm"></Button>
+                    <Button Grid.Column="1" Name="btnEdit" Margin="10 0 10 0" Content="Sửa"></Button>
+                    <Button Grid.Column="2" Name="btnDel" Margin="10 0 10 0" Content="Xóa"></Button>
+                    <Button Grid.Column="3" Name="btnExit" Margin="10 0 10 0" Content="Thoát"></Button>
+                    
+                    </Grid>
                 </Border>
             </StackPanel>
         </Grid>

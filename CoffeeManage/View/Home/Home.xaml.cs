@@ -1,4 +1,5 @@
 ﻿using CoffeeManage.Presenter;
+using CoffeeManage.View.HoaDon;
 using CoffeeManage.View.Home;
 using CoffeeManage.View.NguyenLieu;
 using CoffeeManage.View.NhanVien;
@@ -125,5 +126,7 @@ namespace CoffeeManage
             NhanVien nv = new NhanVien();
             nv.ShowDialog();
         }
+
+        
     }
 }

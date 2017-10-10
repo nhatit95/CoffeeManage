@@ -85,6 +85,9 @@
     <Compile Include="Presenter\LoginPresenter.cs" />
     <Compile Include="Presenter\NguyenLieuPresenter.cs" />
     <Compile Include="Presenter\ThucDonPresenter.cs" />
+    <Compile Include="View\HoaDon\HoaDonBan.xaml.cs">
+      <DependentUpon>HoaDonBan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Home\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,9 @@
     <Compile Include="View\NhanVien\NhanVien.xaml.cs">
       <DependentUpon>NhanVien.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ThucDon\AddThanhPhanTD.xaml.cs">
+      <DependentUpon>AddThanhPhanTD.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ThucDon\AddThucDon.xaml.cs">
       <DependentUpon>AddThucDon.xaml</DependentUpon>
     </Compile>
@@ -119,6 +125,10 @@
     <Compile Include="View\ThucDon\ThucDon.xaml.cs">
       <DependentUpon>ThucDon.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\HoaDon\HoaDonBan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Login\Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -156,6 +166,10 @@
     <Page Include="View\NhanVien\NhanVien.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ThucDon\AddThanhPhanTD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ThucDon\AddThucDon.xaml">
       <SubType>Designer</SubType>

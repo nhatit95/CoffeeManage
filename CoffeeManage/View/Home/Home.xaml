@@ -49,7 +49,7 @@
                         <Image Source="/CoffeeManage;component/View/Img/quan_ly.png">
                         </Image>
                     </MenuItem.Icon>
-                    <MenuItem Width="175" Height="50" Header="Nguyên Liệu">
+                    <MenuItem Width="175" Height="50" Header="Nguyên Liệu" Name="test" >
                         <MenuItem.Icon>
                             <Image Source="/CoffeeManage;component/View/Img/nguyen_lieu.png">
                             </Image>
